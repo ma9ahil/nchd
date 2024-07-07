@@ -42,9 +42,9 @@ body {
     font-size: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    gap: 30px;
     align-items: baseline;
-    width: 50%;
+    width: fit-content;
     height: 100px;
     top: 0;
     z-index: 1000; 
@@ -82,18 +82,42 @@ body {
     
 }
 /* Dropdown container */
-dropdown {
+.dropdown {
     display: inline-block;
     position: relative;
+    font-weight: lighter;
 }
-dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    min-width: 260px;
     z-index: 1;
+    top: 95%; /* This makes the dropdown appear below the Opportunities button */
+    left: 0;
+    margin-top: 5px; /* Optional: to add a small gap between the button and the dropdown */
+    font-weight: lighter;
 }
+
+
+
+.dropdown-content li {
+    list-style: none;
+    font-weight: lighter;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-weight: lighter;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -112,7 +136,7 @@ dropdown-content {
 }
 
 .donate-btn:hover {
-    background-color: #2b1210; /* Darker shade of green on hover */
+    background-color: #012107;; /* Darker shade of green on hover */
 }
 
 .donate-btn:active {
@@ -147,6 +171,7 @@ dropdown-content {
     position: absolute;
     top: 50%;
     left: 35%;
+    right: 10%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 50px;
@@ -156,6 +181,7 @@ dropdown-content {
     font-size: 40px;
     font-weight: normal;
 }
+
 
 /* Form styling */
 .donate-form {
@@ -170,19 +196,40 @@ dropdown-content {
     gap: 8px;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
     justify-content: flex-start;
     margin: 0 auto;
     padding: 20px;
     height: 50%;
     width: 30%;
-    background: linear-gradient(to bottom right, #03340c, white);
+    background: white;
     color: black;
 }
-.donate form p{
-    font-size: 20px;
+
+.donate-form p {
+    font-size: 30px;
     font-weight: bold;
 }
+
+.donate-option-btn {
+    display: block;
+    width: 90%;
+    padding: 20px 20px;
+    border: none;
+    text-align: left;
+    background-color: #03340c;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.donate-option-btn:hover {
+    background-color: #012107;
+}
+
+.operations {
+    text-align: center;
+}
+
 .operations{
     height: 100%;
     width: 100%;
