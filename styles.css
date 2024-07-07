@@ -119,7 +119,24 @@ dropdown-content {
     transform: translateY(1px); /* Push the button down slightly on click */
 }
 
-
+#amount{
+    border:2px solid #03340c;
+    border-radius:8px ;
+    width: 50%;
+    height: 12%;
+    font-size:x-large;
+    outline: none;
+}
+#formDonateBtn{
+    width: 50%;
+    height: 12%;
+    background-color: #03340c;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    border: 4px solid #03340c;
+    border-radius: 8px;
+}
 .news-image {
     width: 100%;
     height: 100%;
@@ -142,20 +159,24 @@ dropdown-content {
 
 /* Form styling */
 .donate-form {
+    font-size: 40px;
+    font-family:"Lato", Helvetica, sans-serif;
     position:absolute;
-    top:60%;
-    left:120%;
+    top:50%;
+    left:80%;
     transform: translate(-50%, -50%);
-
+    text-align: center;
     display: flex;
+    gap: 8px;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
     justify-content: flex-start;
     margin: 0 auto;
     padding: 20px;
-    height: 80%;
-    width: 40%;
-    background-color: white;
+    height: 50%;
+    width: 30%;
+    background: linear-gradient(to bottom right, #03340c, white);
     color: black;
 }
 .donate form p{
